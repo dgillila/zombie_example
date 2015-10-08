@@ -5,6 +5,8 @@
  */
 package zombie;
 
+import model.Map;
+
 /**
  *
  * @author Daniel
@@ -16,7 +18,10 @@ public class Zombie {
      */
     public static void main(String[] args) {
         
-        System.out.println("Hello new world.");
+        Map map = new Map();
+        map.initialize();
+        
+        System.out.println(map.toString());
         
     }
     

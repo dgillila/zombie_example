@@ -6,23 +6,22 @@
 package model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
  * @author Daniel
  */
-public class Player implements Serializable {
+public class Item implements Serializable {
+    
+    public static final int MAX_HITPOINTS = 10;
     
     private String name;
     private int hitPoints;
-    private List<Item> items;
-    
-    public Player() {
-        items = new ArrayList<Item>();
-    }
 
+    public Item() {
+        
+    }
+    
     public String getName() {
         return name;
     }
@@ -39,9 +38,16 @@ public class Player implements Serializable {
         this.hitPoints = hitPoints;
     }
     
-    public void applyDamage(int damage) {
-        this.hitPoints = this.hitPoints - damage;
-        //this.hitPoints -= damage;
+    public boolean isHealthKit() {
+        if(this instanceof HealthKit) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public boolean isWeapon() {
+        return this instanceof Weapon;
     }
     
 }
