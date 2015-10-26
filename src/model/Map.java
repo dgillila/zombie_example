@@ -58,6 +58,16 @@ public class Map implements Serializable {
     }
     
     public void initialize() {
+        
+        Location castle = new Location();
+        //Setup castle
+        matrix[1][1] = castle;
+        
+        Location tower = new Location();
+        //setup tower
+        matrix[0][1] = tower;
+        
+        
         int numZombies = 30;
         int numItems = 15;
         

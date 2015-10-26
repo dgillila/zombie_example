@@ -17,6 +17,7 @@ public class Item implements Serializable {
     
     private String name;
     private int hitPoints;
+    private int durability;
 
     public Item() {
         
@@ -36,6 +37,14 @@ public class Item implements Serializable {
 
     public void setHitPoints(int hitPoints) {
         this.hitPoints = hitPoints;
+    }
+
+    public int getDurability() {
+        return durability;
+    }
+
+    public void setDurability(int durability) {
+        this.durability = durability;
     }
     
     public boolean isHealthKit() {

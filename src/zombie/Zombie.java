@@ -6,6 +6,7 @@
 package zombie;
 
 import model.Map;
+import model.Player;
 
 /**
  *
@@ -18,10 +19,19 @@ public class Zombie {
      */
     public static void main(String[] args) {
         
-        Map map = new Map();
-        map.initialize();
+//        Map map = new Map();
+//        map.initialize();
+//        
+//        System.out.println(map.toString());
         
-        System.out.println(map.toString());
+        Player mainCharacter = new Player();
+        Player second = new Player();
+        
+        System.out.println("main character's name: " + mainCharacter.getName());
+        
+        mainCharacter.setName("Daniel");
+        
+        System.out.println("main character's name: " + mainCharacter.getName());
         
     }
     

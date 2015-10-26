@@ -5,6 +5,7 @@
  */
 package model;
 
+import controller.BattleController;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +15,8 @@ import java.util.List;
  * @author Daniel
  */
 public class Player implements Serializable {
+    
+    public static final int MAX_DAMAGE = 9;
     
     private String name;
     private int hitPoints;
@@ -42,6 +45,24 @@ public class Player implements Serializable {
     public void applyDamage(int damage) {
         this.hitPoints = this.hitPoints - damage;
         //this.hitPoints -= damage;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+    
+    public boolean hasFirstAidKit() {
+        for(Item i : this.items) {
+            if(i.getName().equals("First Aid Kit")) {
+                return true;
+            }
+        }
+        
+        return false;
     }
     
 }
