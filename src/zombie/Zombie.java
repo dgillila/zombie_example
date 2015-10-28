@@ -7,6 +7,8 @@ package zombie;
 
 import model.Map;
 import model.Player;
+import view.MainMenuView;
+import view.WelcomeView;
 
 /**
  *
@@ -19,19 +21,35 @@ public class Zombie {
      */
     public static void main(String[] args) {
         
+//        Player player = new Player();
+//        
+//        WelcomeView welcomeView = new WelcomeView();
+//        welcomeView.displayBanner();
+//        
+//        player.setName(welcomeView.getPlayerName());
+//        
+//        welcomeView.displayPlayerNameBanner(player);
+        
+        MainMenuView mainView = new MainMenuView();
+        
+        char in = mainView.getInput();
+        
+        System.out.println("YOU ENTERED " + in);
+        
+        
 //        Map map = new Map();
 //        map.initialize();
 //        
 //        System.out.println(map.toString());
         
-        Player mainCharacter = new Player();
-        Player second = new Player();
-        
-        System.out.println("main character's name: " + mainCharacter.getName());
-        
-        mainCharacter.setName("Daniel");
-        
-        System.out.println("main character's name: " + mainCharacter.getName());
+//        Player mainCharacter = new Player();
+//        Player second = new Player();
+//        
+//        System.out.println("main character's name: " + mainCharacter.getName());
+//        
+//        mainCharacter.setName("Daniel");
+//        
+//        System.out.println("main character's name: " + mainCharacter.getName());
         
     }
     
