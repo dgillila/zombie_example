@@ -29,11 +29,9 @@ public class BattleView extends View {
 
         switch (input) {
             case 'A':
-                attack();
-                break;
+                return attack();
             case 'I':
-                attackWithItem();
-                break;
+                return attackWithItem();
             case 'H':
                 viewHealth();
                 break;
@@ -48,12 +46,14 @@ public class BattleView extends View {
 
     }
 
-    private void attack() {
+    private boolean attack() {
         System.out.println("NOT IMPLEMENTED YET");
+        return false;
     }
 
-    private void attackWithItem() {
+    private boolean attackWithItem() {
         System.out.println("NOT IMPLEMENTED YET");
+        return false;
     }
 
     private void viewHealth() {
