@@ -31,7 +31,7 @@ public class Zombie {
 //        welcomeView.displayPlayerNameBanner(player);
         
         MainMenuView mainView = new MainMenuView();
-        mainView.displayMenu();
+        mainView.display();
         
         
 //        Map map = new Map();
