@@ -31,10 +31,7 @@ public class Zombie {
 //        welcomeView.displayPlayerNameBanner(player);
         
         MainMenuView mainView = new MainMenuView();
-        
-        char in = mainView.getInput();
-        
-        System.out.println("YOU ENTERED " + in);
+        mainView.displayMenu();
         
         
 //        Map map = new Map();

@@ -3,12 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package zombie;
+package view;
 
 /**
  *
  * @author Daniel
  */
-public class test {
+public class HelpMenu {
+    
+    public HelpMenu() {
+        
+    }
+    
+    public void displayMenu() {
+        
+    }
     
 }
